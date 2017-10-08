@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block body %}
+  <ul>
+    {% for tiposeguro in tiposeguro_list %}
+      <li>
+        {{tiposeguro.descripcion}} - {{tiposeguro.dd}}
+      </li>
+    {% endfor %}
+  </ul>
+{% endblock %}
